@@ -1,6 +1,6 @@
-on:
-  schedule:
-  - cron:  "*/15 * * * *"
+on: push
+#  schedule:
+#  - cron:  "*/15 * * * *"
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
@@ -9,7 +9,8 @@ jobs:
     - name: repo-sync
       uses: repo-sync/github-sync@v2
       with:
-        source_repo: "ssh://quantas@git.code.sf.net/p/dbunit/code.git dbunit-code.git"
+#        source_repo: "ssh://quantas@git.code.sf.net/p/dbunit/code.git dbunit-code.git"
+        source_repo: "git://git.code.sf.net/p/dbunit/code.git"
         source_branch: "*"
         destination_branch: "*"
         github_token: ${{ secrets.GITHUB_TOKEN }}
