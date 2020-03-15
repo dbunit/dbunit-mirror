@@ -1,0 +1,8 @@
+{
+  "name": "dbunit-mirror",
+  "version": "1.0.0",
+  "description": "TEMP file for CI",
+  "scripts": {
+    "test": "exit 0"
+  }
+}
