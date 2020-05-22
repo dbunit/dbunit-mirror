@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron:  "0,*/10 * * * *"
+    - cron:  "0 * * * *"
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
